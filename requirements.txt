@@ -1,0 +1,7 @@
+requests
+pandas
+pydantic
+psycopg2
+SQLAlchemy
+pandasql
+pytest
