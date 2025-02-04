@@ -71,7 +71,7 @@ python drop_tables.py
 ## 🔍 Features Implemented
 ### ✅ Data Collection
 - Retrieves 500 Canadian users from the API with `ca` nationality and seed `vendease`.
-- *It should be noted that seed passed into the api did not produce the assumed data as indicated in the problem statement, i.e. user 1 was not be Ariana Denys and user 500 was not Alexis Li*
+- *It should be noted that seed passed into the api did not produce the assumed data as indicated in the problem statement, i.e. user 1 was not Ariana Denys and user 500 was not Alexis Li*
 
 
 ### ✅ Data Processing
