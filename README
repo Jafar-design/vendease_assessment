@@ -71,16 +71,21 @@ python drop_tables.py
 ## 🔍 Features Implemented
 ### ✅ Data Collection
 - Retrieves 500 Canadian users from the API with `ca` nationality and seed `vendease`.
+- *It should be noted that seed passed into the api did not produce the assumed data as indicated in the problem statement, i.e. user 1 was not be Ariana Denys and user 500 was not Alexis Li*
+
 
 ### ✅ Data Processing
-- Extracts relevant user information (UUID, name, age, gender, registration date, etc.).
-- Filters members based on mentorship criteria.
+- The code checks for duplicate records of members and did found about 20 records duplicated, bringing the total record size to 480 members. This was implemented both on the database and dataframe levels in the `models.py` and `utils.py` respectively.
+- I extracted relevant user information (UUID, name, age, gender, registration date, etc.).
+- Filtered members based on mentorship criteria.
+
 
 ### ✅ Mentorship Pairing
-- Assigns mentorees to mentors using a first-come, first-served strategy based on registration date.
+- Assigned mentorees to mentors. This was enforced in the 
 
 ### ✅ Database Management
 - Stores members and mentorships in PostgreSQL.
+- The `models.py` file defines the structure of your database tables using SQLAlchemy ORM (Object-Relational Mapping). It translates Python objects into database tables and manages relationships between them.
 - Allows querying mentorship statistics.
 
 ### ✅ Data Analysis
@@ -105,7 +110,7 @@ python analysis.py
 
 ### 3️⃣ Check Data Discrepancies
 ```bash
-python discrepancy.py
+python data_discrepancy.py
 ```
 
 ---

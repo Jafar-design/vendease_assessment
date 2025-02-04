@@ -17,6 +17,7 @@ services:
   app:
     build: .
     container_name: mentorship_app
+    # restart: always
     depends_on:
       - db
     environment:
@@ -24,6 +25,8 @@ services:
     volumes:
       - .:/app
     command: ["python", "src/main.py"]
+
+
 
 volumes:
   postgres_data:
